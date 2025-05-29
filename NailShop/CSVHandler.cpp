@@ -14,7 +14,7 @@ void CSVHandler::writeCSV(const string& filename, const vector<vector<string>>& 
 	}
 
 	// csv파일의 제목줄
-	userFile << "Name, ID, Password" << endl;
+	userFile << "Name, ID, Password, Phone" << endl;
 
 	// CSV 파일에 데이터 쓰기
 	// 문법 설명: c+11부터 지원, STL 컨테이너 순회시 깔끔 (그 줄을 다 읽어온다는 의미)
