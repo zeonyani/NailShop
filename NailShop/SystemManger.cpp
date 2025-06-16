@@ -655,3 +655,14 @@ void SystemManager::updateService() {
 void SystemManager::viewServices() {
     serviceManager.printAllServices();
 }
+
+// 서비스 삭제
+void SystemManager::deleteService() {
+    string serviceId;
+    cout << "\n--- 서비스 삭제 ---" << endl;
+    serviceManager.printAllServices(); // 현재 서비스 목록 표시
+    cout << "\n삭제할 서비스 ID 입력: ";
+    getline(cin, serviceId);
+
+    serviceManager.deleteService(serviceId);
+}

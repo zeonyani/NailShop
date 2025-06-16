@@ -1,2 +1,12 @@
-﻿SystemManger.obj : error LNK2019: "private: void __cdecl SystemManager::deleteService(void)" (?deleteService@SystemManager@@AEAAXXZ)"private: void __cdecl SystemManager::manageServices(void)" (?manageServices@SystemManager@@AEAAXXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
-C:\Users\Hyangee\source\repos\NailShop\x64\Debug\NailShop.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
+﻿  Reservation.cpp
+  ReservationManager.cpp
+C:\Users\Hyangee\source\repos\NailShop\NailShop\ReservationManager.cpp(43,44): warning C4101: 'e' :참조되지 않은 지역 변수입니다.
+C:\Users\Hyangee\source\repos\NailShop\NailShop\ReservationManager.cpp(46,40): warning C4101: 'e' :참조되지 않은 지역 변수입니다.
+  SystemManger.cpp
+C:\Users\Hyangee\source\repos\NailShop\NailShop\SystemManger.cpp(621,40): warning C4101: 'e' :참조되지 않은 지역 변수입니다.
+C:\Users\Hyangee\source\repos\NailShop\NailShop\SystemManger.cpp(625,36): warning C4101: 'e' :참조되지 않은 지역 변수입니다.
+C:\Users\Hyangee\source\repos\NailShop\NailShop\SystemManger.cpp(641,40): warning C4101: 'e' :참조되지 않은 지역 변수입니다.
+C:\Users\Hyangee\source\repos\NailShop\NailShop\SystemManger.cpp(645,36): warning C4101: 'e' :참조되지 않은 지역 변수입니다.
+  main.cpp
+  코드를 생성하고 있습니다...
+  NailShop.vcxproj -> C:\Users\Hyangee\source\repos\NailShop\x64\Debug\NailShop.exe
