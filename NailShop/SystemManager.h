@@ -15,6 +15,7 @@ private:
     UserManager userManager;             // 사용자 관리를 위한 UserManager 객체
     UserType currentLoggedInUserType;    // 현재 로그인된 사용자의 유형
     std::string currentLoggedInUserId;   // 현재 로그인된 사용자의 ID
+    std::string currentLoggedInUserName; // 현재 로그인된 사용자의 이름 추가
 
     // --- 로그인 관련 함수 ---
     bool loginUser();

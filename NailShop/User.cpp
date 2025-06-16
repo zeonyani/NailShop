@@ -1,17 +1,15 @@
 #include "User.h"
+#include <iostream>
+
 using namespace std;
-string User::getId() const {
-	return id;  // 아이디 반환
+
+// 생성자: name 파라미터가 추가됨!
+User::User(const string& userId, const string& password, UserType type, const string& name)
+    : userId(userId), password(password), type(type), name(name) {
 }
-string User::getName() const {
-	return name;  // 이름 반환
-}
-string User::getPhone() const {
-	return phone;  // 전화번호 반환
-}
-bool User::checkPw(const std::string& password) const {
-	return pw == password;  // 비밀번호 비교
-}
-void User::setPhone(const std::string& phoneNumber) {
-	phone = phoneNumber;  // 전화번호 설정
-}
+
+string User::getUserId() const { return userId; }
+string User::getPassword() const { return password; }
+UserType User::getUserType() const { return type; }
+bool User::checkPassword(const string& inputPassword) const { return password == inputPassword; }
+string User::getName() const { return name; } // getName 구현됨!

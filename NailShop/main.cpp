@@ -1,4 +1,7 @@
 #include "SystemManager.h" // SystemManager 클래스 사용을 위해 포함하기
+#include <iostream> // cout, endl 사용을 위해 포함하기
+
+using namespace std;
 
 int main() {
     // SystemManager 객체 생성하기
