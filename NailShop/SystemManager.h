@@ -1,81 +1,68 @@
-// SystemManager.h
-#pragma once
+//SystemManager.h
+#ifndef SYSTEM_MANAGER_H
+#define SYSTEM_MANAGER_H
 
-#include <string>           // std::string
-#include "ReservationManager.h" // ReservationManager
-#include "UserManager.h"    // UserManager
-#include "ServiceManager.h" // ServiceManager
-#include "User.h"           // UserType, User
+#include "UserManager.h"
+#include "ServiceManager.h"
+#include "ReservationManager.h"
+#include "User.h" // UserType 정의를 위해 필요
 
-// 전체 시스템 흐름 관리
+// SystemManager 클래스
 class SystemManager {
-public:
-    // SystemManager 생성자
-    SystemManager();
-    // 시스템 실행 진입점
-    void run();
-
 private:
-    ReservationManager reservationManager;  // 예약 관리 객체
-    UserManager userManager;                // 사용자 관리 객체
-    ServiceManager serviceManager;          // 서비스 관리 객체
+    UserManager userManager;
+    ServiceManager serviceManager;
+    ReservationManager reservationManager; // 생성자에서 serviceManager 참조를 받도록 수정
 
-    UserType currentLoggedInUserType;        // 현재 로그인 사용자 유형
-    std::string currentLoggedInUserId;      // 현재 로그인 사용자 ID
-    std::string currentLoggedInUserName;    // 현재 로그인 사용자 이름
-    std::string currentLoggedInUserPhone;   // 현재 로그인 사용자 전화번호
+    UserType currentLoggedInUserType;
+    std::string currentLoggedInUserId;
+    std::string currentLoggedInUserName;
+    std::string currentLoggedInUserPhone; // 현재 로그인한 사용자 전화번호
 
-    // 초기 진입 메뉴 표시
-    void displayEntryMenu();
-    // 사용자 로그인 처리
-    bool loginUser();
-    // 고객 회원가입 처리
-    void registerCustomerAccount();
+    // 입력 버퍼 비우기 헬퍼 함수
+    void clearInputBuffer();
 
-    // 초기 관리자 계정 생성
-    void createInitialAdminAccount();
-    // 초기 서비스 데이터 생성
-    void createInitialServices();
-
-    // 메인 메뉴 출력
+    // 메뉴 관련 함수들
     void displayMainMenu();
-    // 메인 메뉴 입력 처리
-    void handleMainMenuInput(int choice);
+    void processMainMenuInput(int choice);
 
-    // 새 예약 추가
-    void addNewReservation();
-    // 기존 예약 취소
-    void cancelExistingReservation();
-    // 특정 예약 조회
-    void viewSpecificReservation();
-    // 모든 예약 조회
-    void viewAllReservations();
-    // 내 예약 조회 (고객 전용)
-    void viewMyReservations();
+    void displayOwnerMenu();
+    void processOwnerMenuInput(int choice);
+    void handleOwnerServiceManagement();
+    void handleOwnerUserManagement();
+    void handleOwnerReservationManagement(); // 사장 예약 관리 기능
+    void handleOwnerAccountInfo(); // 사장 계정 정보 관리 기능
 
-    // 오늘 예약 확인 (직원/사장)
-    void employeeViewTodayReservations();
+    void displayEmployeeMenu();
+    void processEmployeeMenuInput(int choice);
+    void handleEmployeeServiceManagement();
+    void handleEmployeeReservationManagement(); // 직원 예약 관리 기능
+    void handleEmployeeAccountInfo(); // 직원 계정 정보 관리 기능
 
-    // 사용자 관리 (사장 전용 하위 메뉴)
-    void manageUsers();
-    // 새 직원/고객 계정 추가
-    void addStaffOrCustomerAccount();
-    // 직원/고객 계정 삭제
-    void deleteStaffOrCustomerAccount();
-    // 모든 사용자 목록 보기
-    void viewAllUsers();
-    // 사용자 검색 (ID)
-    void searchUser();
+    void displayCustomerMenu();
+    void processCustomerMenuInput(int choice);
+    void handleCustomerReservationManagement(); // 고객 예약 관리 기능
+    void handleCustomerAccountInfo(); // 고객 계정 정보 관리 기능
 
+    // 추가된 함수 선언
+    void handleLogin(); // 로그인 처리 함수
 
-    // 서비스 관리 (사장 전용 하위 메뉴)
-    void manageServices();
-    // 서비스 추가
-    void addService();
-    // 서비스 수정
-    void updateService();
-    // 서비스 삭제
-    void deleteService();
-    // 서비스 목록 보기
-    void viewServices();
+    void addUser();
+    void deleteUser();
+    // 오버로드된 함수를 사용하여 현재 로그인된 사용자 또는 특정 사용자의 정보를 수정
+    void updateUserAccountInfo(const std::string& targetUserId = "");
+
+    void makeReservation(); // 예약 생성 기능
+    void cancelReservation(); // 예약 취소 기능 (관리자/직원용)
+    void cancelReservation(const std::string& customerId); // 예약 취소 기능 (고객용, 자신의 예약만)
+    void viewAllReservations(); // 모든 예약 보기 기능
+    void viewReservationsByCustomer(); // 고객별 예약 보기 기능 (관리자/직원용)
+    void viewReservationsByCustomer(const std::string& customerId); // 고객별 예약 보기 기능 (고객용, 자신의 예약만)
+    void viewReservationsForDate(); // 날짜별 예약 보기 기능
+
+public:
+    SystemManager();
+    void run();
 };
+
+#endif // SYSTEM_MANAGER_H

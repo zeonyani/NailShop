@@ -1,42 +1,34 @@
-// ServiceManager.h
-#pragma once
+//ServiceManager.h
+#ifndef SERVICE_MANAGER_H
+#define SERVICE_MANAGER_H
 
-#include <string>   // std::string
-#include <map>      // std::map
-#include <vector>   // std::vector
-#include "Service.h"    // Service 클래스
-#include "CSVHandler.h" // CSVHandler
+#include <map>
+#include <string>
+#include <vector>
+#include "Service.h"
+#include "CSVHandler.h"
 
-// 서비스 목록 관리
 class ServiceManager {
+private:
+    static const std::string SERVICES_FILE;
+    std::map<std::string, Service> services;
+    int nextServiceId;
+
+    void loadServices();
+    void saveServices(bool silent = false);
+
 public:
-    // 생성자
     ServiceManager();
-    // 소멸자
     ~ServiceManager();
 
-    // 새 서비스 추가
-    bool addService(const std::string& name, double price, int durationMinutes);
-    // 기존 서비스 수정
-    bool updateService(const std::string& serviceId, const std::string& newName, double newPrice, int newDurationMinutes);
-    // 서비스 삭제
-    bool deleteService(const std::string& serviceId);
-    // 특정 서비스 정보 조회 (ID)
+    // 서비스 ID로 서비스 조회
     const Service* getService(const std::string& serviceId) const;
-    // 특정 서비스 정보 조회 (이름)
+    // 서비스 이름으로 서비스 조회
     const Service* getServiceByName(const std::string& serviceName) const;
-    // 모든 서비스 목록 출력
+    // 모든 서비스 목록 반환
+    const std::map<std::string, Service>& getAllServices() const;
+    // 모든 서비스 정보 출력
     void printAllServices() const;
-
-private:
-    std::map<std::string, Service> services; // 서비스 ID-Service 맵
-    const std::string SERVICES_FILE = "services.csv"; // 서비스 데이터 파일 경로
-    int nextServiceId; // 다음 서비스 ID 카운터
-
-    // 고유 서비스 ID 생성
-    std::string generateUniqueId();
-    // CSV 파일로부터 서비스 데이터 로드
-    void loadServices();
-    // CSV 파일에 서비스 데이터 저장
-    void saveServices();
 };
+
+#endif // SERVICE_MANAGER_H

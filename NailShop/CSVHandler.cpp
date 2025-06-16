@@ -21,8 +21,8 @@ vector<string> CSVHandler::readCsv(const string& filePath) {
         file.close();               // 파일 스트림 닫기
     }
     else {
-        // 파일 없거나 열 수 없을 시 안내 메시지
-        cerr << "정보: 파일 찾을 수 없거나 열 수 없음: " << filePath << ". 새 파일 생성 가능." << endl;
+        // 파일 없거나 열 수 없을 시 안내 메시지 (주석 처리하여 숨김)
+        //cerr << "정보: 파일 찾을 수 없거나 열 수 없음: " << filePath << ". 새 파일 생성 가능." << endl;
     }
     return lines;                   // 읽은 줄 반환
 }
@@ -32,7 +32,7 @@ bool CSVHandler::writeCsv(const string& filePath, const vector<string>& data) {
     ofstream file(filePath);    // 파일 스트림 열기 (덮어쓰기 모드)
 
     if (file.is_open()) {       // 파일 열림 확인
-        for (const string& line : data) { // 각 줄 파일에 쓰기
+        for (const string& line : data) { // 각 줄 쓰기
             file << line << endl;
         }
         file.close();               // 파일 스트림 닫기
@@ -73,12 +73,12 @@ vector<string> CSVHandler::parseCsvLine(const string& line, char delimiter) {
 
 // 문자열 벡터를 CSV 한 줄로 포맷팅
 string CSVHandler::formatCsvLine(const vector<string>& fields, char delimiter) {
-    stringstream ss;                // 문자열 스트림
-    for (size_t i = 0; i < fields.size(); ++i) { // 각 필드 순회
-        ss << fields[i];
-        if (i < fields.size() - 1) { // 마지막 필드 아니면 구분자 추가
-            ss << delimiter;
+    string line;
+    for (size_t i = 0; i < fields.size(); ++i) { // 각 필드 처리
+        line += fields[i];                  // 필드 추가
+        if (i < fields.size() - 1) {        // 마지막 필드가 아니면 구분자 추가
+            line += delimiter;
         }
     }
-    return ss.str();                // 포맷팅된 문자열 반환
+    return line;                        // 포맷팅된 줄 반환
 }

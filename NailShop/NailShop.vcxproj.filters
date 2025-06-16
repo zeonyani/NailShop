@@ -33,9 +33,6 @@
     <ClCompile Include="Reservation.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="SystemManger.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="ReservationManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -49,6 +46,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ServiceManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
