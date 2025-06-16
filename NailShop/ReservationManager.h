@@ -1,17 +1,26 @@
 #pragma once
-#include <map>
 #include <string>
+#include <map>
 #include "Reservation.h"
-using namespace std;
 
 class ReservationManager {
 public:
-	ReservationManager() = default; // 기본 생성자
-	ReservationManager(const ReservationManager&) = delete; // 복사 생성자 삭제
-	
+    // 예약 추가
+    void addReservation(const std::string& customerId, const std::string& service, const std::string& datetime);
+
+    // 예약 삭제 (취소)
+    void deleteReservation(const std::string& reservationId);
+
+    // 특정 예약 반환
+    Reservation getReservation(const std::string& reservationId);
+
+    // 특정 예약 출력
+    void printReservation(const std::string& reservationId);
+
+    // 전체 예약 출력
+    void printAllReservations();
+
 private:
-	map<string, Reservation> reservations; // 예약 ID를 키로 하는 예약 정보 맵
-
-
-
+    // 예약 ID → Reservation 객체 매핑
+    std::map<std::string, Reservation> reservations;
 };

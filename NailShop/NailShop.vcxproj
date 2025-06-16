@@ -130,6 +130,7 @@
     <ClCompile Include="Admin.cpp" />
     <ClCompile Include="CSVHandler.cpp" />
     <ClCompile Include="Customer.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Reservation.cpp" />
     <ClCompile Include="ReservationManager.cpp" />
     <ClCompile Include="Staff.cpp" />
@@ -143,6 +144,7 @@
     <ClInclude Include="Reservation.h" />
     <ClInclude Include="ReservationManager.h" />
     <ClInclude Include="Staff.h" />
+    <ClInclude Include="SystemManager.h" />
     <ClInclude Include="User.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

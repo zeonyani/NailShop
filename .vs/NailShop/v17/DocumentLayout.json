@@ -1,34 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kosa\\source\\repos\\NailShop\\",
+  "WorkspaceRootPath": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\ReservationManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|solutionrelative:NailShop\\ReservationManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\Reservation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|solutionrelative:NailShop\\Reservation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\Reservation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|solutionrelative:NailShop\\Reservation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\ReservationManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|solutionrelative:NailShop\\ReservationManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|solutionrelative:NailShop\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\Staff.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|solutionrelative:NailShop\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\SystemManger.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|solutionrelative:NailShop\\SystemManger.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\SystemManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|solutionrelative:NailShop\\SystemManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\Reservation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|solutionrelative:NailShop\\Reservation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\Reservation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|solutionrelative:NailShop\\Reservation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\Admin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|solutionrelative:NailShop\\Admin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\CSVHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|solutionrelative:NailShop\\CSVHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\Customer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|solutionrelative:NailShop\\Customer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\Staff.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|solutionrelative:NailShop\\Staff.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\SystemManger.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|solutionrelative:NailShop\\SystemManger.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\ReservationManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA8B8DF2-D35B-4882-93F6-2EC34EBBDE1C}|NailShop\\NailShop.vcxproj|solutionrelative:NailShop\\ReservationManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,139 +54,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReservationManager.h",
-              "DocumentMoniker": "C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\ReservationManager.h",
-              "RelativeDocumentMoniker": "NailShop\\ReservationManager.h",
-              "ToolTip": "C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\ReservationManager.h",
-              "RelativeToolTip": "NailShop\\ReservationManager.h",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAowAsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-29T08:08:59.158Z",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\main.cpp",
+              "RelativeDocumentMoniker": "NailShop\\main.cpp",
+              "ToolTip": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\main.cpp",
+              "RelativeToolTip": "NailShop\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-16T02:15:32.826Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ReservationManager.cpp",
-              "DocumentMoniker": "C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\ReservationManager.cpp",
-              "RelativeDocumentMoniker": "NailShop\\ReservationManager.cpp",
-              "ToolTip": "C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\ReservationManager.cpp",
-              "RelativeToolTip": "NailShop\\ReservationManager.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-29T08:08:21.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SystemManger.cpp",
-              "DocumentMoniker": "C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\SystemManger.cpp",
-              "RelativeDocumentMoniker": "NailShop\\SystemManger.cpp",
-              "ToolTip": "C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\SystemManger.cpp",
-              "RelativeToolTip": "NailShop\\SystemManger.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-29T07:36:58.596Z",
+              "Title": "SystemManager.h",
+              "DocumentMoniker": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\SystemManager.h",
+              "RelativeDocumentMoniker": "NailShop\\SystemManager.h",
+              "ToolTip": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\SystemManager.h",
+              "RelativeToolTip": "NailShop\\SystemManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-16T02:09:03.527Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Staff.cpp",
-              "DocumentMoniker": "C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\Staff.cpp",
-              "RelativeDocumentMoniker": "NailShop\\Staff.cpp",
-              "ToolTip": "C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\Staff.cpp",
-              "RelativeToolTip": "NailShop\\Staff.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "Title": "Reservation.h",
+              "DocumentMoniker": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\Reservation.h",
+              "RelativeDocumentMoniker": "NailShop\\Reservation.h",
+              "ToolTip": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\Reservation.h",
+              "RelativeToolTip": "NailShop\\Reservation.h",
+              "ViewState": "AgIAAAIAAAAAAAAAAAASwCQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-16T01:37:39.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ReservationManager.h",
+              "DocumentMoniker": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\ReservationManager.h",
+              "RelativeDocumentMoniker": "NailShop\\ReservationManager.h",
+              "ToolTip": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\ReservationManager.h",
+              "RelativeToolTip": "NailShop\\ReservationManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-16T01:35:35.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cpp",
+              "DocumentMoniker": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\User.cpp",
+              "RelativeDocumentMoniker": "NailShop\\User.cpp",
+              "ToolTip": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\User.cpp",
+              "RelativeToolTip": "NailShop\\User.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-29T06:33:17.398Z",
+              "WhenOpened": "2025-06-16T01:28:10.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SystemManger.cpp",
+              "DocumentMoniker": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\SystemManger.cpp",
+              "RelativeDocumentMoniker": "NailShop\\SystemManger.cpp",
+              "ToolTip": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\SystemManger.cpp",
+              "RelativeToolTip": "NailShop\\SystemManger.cpp",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAkwIsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-16T01:28:09.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Staff.cpp",
+              "DocumentMoniker": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\Staff.cpp",
+              "RelativeDocumentMoniker": "NailShop\\Staff.cpp",
+              "ToolTip": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\Staff.cpp",
+              "RelativeToolTip": "NailShop\\Staff.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-16T01:28:09.118Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "User.cpp",
-              "DocumentMoniker": "C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\User.cpp",
-              "RelativeDocumentMoniker": "NailShop\\User.cpp",
-              "ToolTip": "C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\User.cpp",
-              "RelativeToolTip": "NailShop\\User.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-29T06:33:13.395Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "c59a3192-ab8b-4b2c-8e07-98b0c5417651",
-        "Display": 0,
-        "X": 86,
-        "Y": 130,
-        "Width": 1483,
-        "Height": 804,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Reservation.h",
-              "DocumentMoniker": "C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\Reservation.h",
-              "RelativeDocumentMoniker": "NailShop\\Reservation.h",
-              "ToolTip": "C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\Reservation.h",
-              "RelativeToolTip": "NailShop\\Reservation.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-29T06:32:00.75Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "ab4b5949-022e-4d4f-b816-3d1ca487b422",
-        "Display": 0,
-        "X": 305,
-        "Y": 443,
-        "Width": 627,
-        "Height": 787,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Reservation.cpp",
-              "DocumentMoniker": "C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\Reservation.cpp",
+              "DocumentMoniker": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\Reservation.cpp",
               "RelativeDocumentMoniker": "NailShop\\Reservation.cpp",
-              "ToolTip": "C:\\Users\\kosa\\source\\repos\\NailShop\\NailShop\\Reservation.cpp",
+              "ToolTip": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\Reservation.cpp",
               "RelativeToolTip": "NailShop\\Reservation.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-29T06:31:49.061Z",
+              "WhenOpened": "2025-06-16T01:28:07.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Customer.cpp",
+              "DocumentMoniker": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\Customer.cpp",
+              "RelativeDocumentMoniker": "NailShop\\Customer.cpp",
+              "ToolTip": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\Customer.cpp",
+              "RelativeToolTip": "NailShop\\Customer.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-16T01:28:07.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CSVHandler.cpp",
+              "DocumentMoniker": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\CSVHandler.cpp",
+              "RelativeDocumentMoniker": "NailShop\\CSVHandler.cpp",
+              "ToolTip": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\CSVHandler.cpp",
+              "RelativeToolTip": "NailShop\\CSVHandler.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-16T01:28:06.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Admin.cpp",
+              "DocumentMoniker": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\Admin.cpp",
+              "RelativeDocumentMoniker": "NailShop\\Admin.cpp",
+              "ToolTip": "C:\\Users\\Hyangee\\source\\repos\\NailShop\\NailShop\\Admin.cpp",
+              "RelativeToolTip": "NailShop\\Admin.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-16T01:27:54.649Z",
               "EditorCaption": ""
             }
           ]

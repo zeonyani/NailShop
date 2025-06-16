@@ -16,15 +16,13 @@ public:
 	string getCustomerId() const;
 	string getServiceType() const;
 	string getDateTime() const;
+	ReservationStatus getStatus() const;
 
 	// 예약 변경 함수
 	void changeReservation(const string& newServiceType, const string& newDateTime);
 
 	// 예약 취소 함수
 	void cancelReservation();
-
-	// 예약 상태 함수(이미 예약이면 추가 못해야 하니까)
-	bool isReserved() const;
 
 	// 예약 ID 반환 함수 -> 특정 예약을 찾기 위해 사용(외부에서 특정한 예약을 콕 집으려고)
 	string getReservationId() const;
@@ -36,5 +34,5 @@ private:
 	string dateTime;    // 예약 날짜 및 시간
 	ReservationStatus status; // 예약 상태 (예약됨, 취소됨 등)
 
-	static int nextId; // 고유 ID 생성을 위한 정적 변수
+	static int nextReservationId; // 고유 ID 생성을 위한 정적 변수
 };
