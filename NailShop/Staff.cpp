@@ -1,15 +1,14 @@
-#include "Staff.h"
-#include <iostream>
-using namespace std;
-void Staff::showTodaySchedule() const {
-	// 오늘 예약 보여주기 로직 구현
-	cout << "오늘의 예약 목록입니다." << endl;
-	for (int i = 1; i <= 5; ++i) { // 예시로 5개의 예약을 출력
-		cout << "예약 " << i << ": 고객 이름, 시간, 서비스" << endl;
-	}
-}
-void Staff::searchCustomer(const std::string& customerId) const {
-	// 고객 검색 로직 구현
-	cout << "고객 ID: " << customerId << "에 대한 정보를 검색합니다." << endl;
+// Staff.cpp
+#include "Staff.h"      // Staff 클래스
+#include <iostream>     // 콘솔 출력
+
+using namespace std;    // std:: 네임스페이스 사용
+
+// Staff 기본 생성자
+Staff::Staff() : User() {
 }
 
+// Staff 매개변수 생성자
+Staff::Staff(const string& userId, const string& password, const string& name, const string& phone)
+    : User(userId, password, UserType::Employee, name, phone) { // 부모 생성자 호출, UserType::Employee 명시
+}

@@ -1,33 +1,51 @@
-#include "Reservation.h"
-#include <string>
-using namespace std;
-int Reservation::nextReservationId = 1; // 정적 변수 초기화, 예약 ID 생성에 사용
-Reservation::Reservation(const string& customerId, const string& serviceType, const string& dateTime)
-	: customerId(customerId), serviceType(serviceType), dateTime(dateTime), status(ReservationStatus::Active) {
-	reservationId = "R" + to_string(nextReservationId++); // 예약 ID 생성, 고유 ID 증가
-} // 매개변수 생성자, 예약 상태는 기본적으로 활성화로 설정
-string Reservation::getCustomerId() const {
-	return customerId;  // 고객 ID 반환
-}
-string Reservation::getServiceType() const {
-	return serviceType; // 서비스 종류 반환
-}
-string Reservation::getDateTime() const {
-	return dateTime;    // 예약 날짜 및 시간 반환
-}
-void Reservation::changeReservation(const string& newServiceType, const string& newDateTime) {
-	serviceType = newServiceType; // 서비스 종류 변경
-	dateTime = newDateTime;       // 예약 날짜 및 시간 변경
-}
-void Reservation::cancelReservation() {
-	status = ReservationStatus::Cancelled; // 예약 상태를 취소로 변경
-}
-string Reservation::getReservationId() const {
-	return reservationId; // 예약 ID 반환
+// Reservation.cpp
+#include "Reservation.h"    // Reservation 클래스
+#include "CSVHandler.h"     // CSVHandler
+#include <iostream>         // 콘솔 출력
+#include <vector>           // std::vector
+
+using namespace std;        // std:: 네임스페이스 사용
+
+// Reservation 생성자
+Reservation::Reservation(const string& reservationId, const string& customerId, const string& service, const string& dateTime)
+    : reservationId(reservationId), customerId(customerId), service(service), dateTime(dateTime) {
 }
 
-// 예약 상태를 반환하는 함수
-// 예: Active(예약됨), Cancelled(취소됨)
-ReservationStatus Reservation::getStatus() const {
-	return status;
+// 예약 ID 반환
+string Reservation::getReservationId() const {
+    return reservationId;
+}
+
+// 고객 ID 반환
+string Reservation::getCustomerId() const {
+    return customerId;
+}
+
+// 서비스 종류 반환
+string Reservation::getService() const {
+    return service;
+}
+
+// 예약 날짜 및 시간 반환
+string Reservation::getDateTime() const {
+    return dateTime;
+}
+
+// 예약 정보 CSV 문자열 변환
+string Reservation::toCsvString() const {
+    vector<string> fields;
+    fields.push_back(reservationId);
+    fields.push_back(customerId);
+    fields.push_back(service);
+    fields.push_back(dateTime);
+    return CSVHandler::formatCsvLine(fields);
+}
+
+// CSV 문자열로부터 Reservation 객체 생성
+Reservation Reservation::fromCsvString(const string& csvLine) {
+    vector<string> fields = CSVHandler::parseCsvLine(csvLine);
+    if (fields.size() == 4) { // 예약 정보 필드 수 (4개)
+        return Reservation(fields[0], fields[1], fields[2], fields[3]);
+    }
+    return Reservation("", "", "", ""); // 잘못된 형식 시 빈 Reservation 객체 반환
 }

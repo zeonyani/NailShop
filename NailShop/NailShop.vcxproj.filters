@@ -45,6 +45,12 @@
     <ClCompile Include="UserManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Service.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CSVHandler.h">
@@ -72,6 +78,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="UserManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Service.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceManager.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

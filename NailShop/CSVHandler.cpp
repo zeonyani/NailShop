@@ -1,58 +1,84 @@
-#include "CSVHandler.h"
-#include <iostream> // cerr 사용을 위함
-#include <string>
-#include <vector>
-#include <fstream>
-using namespace std;
+// CSVHandler.cpp
+#include "CSVHandler.h" // CSVHandler 클래스
+#include <fstream>      // 파일 입출력
+#include <sstream>      // 문자열 스트림
+#include <iostream>     // 콘솔 출력
 
-void CSVHandler::writeCSV(const string& filename, const vector<vector<string>>& data)
-{
-	ofstream userFile(filename); // CSV 파일 열기, filename으로 하는 이유는 고객, 직원, 예약 상황에 따른 csv파일을 구분하려고
-	if (!userFile.is_open()) { // 파일 열기 실패 여부 확인
-		cerr << "파일 열기 실패" << filename << endl; // 파일 열기 실패 에러 메시지
-		return; // 파일 열기 실패 시 함수 종료
-	}
+using namespace std;    // std:: 네임스페이스 사용
 
-	// csv파일의 제목줄
-	userFile << "Name, ID, Password, Phone" << endl;
+// CSV 파일 읽기
+vector<string> CSVHandler::readCsv(const string& filePath) {
+    vector<string> lines;       // 읽은 줄 저장
+    ifstream file(filePath);    // 파일 스트림
 
-	// CSV 파일에 데이터 쓰기
-	// 문법 설명: c+11부터 지원, STL 컨테이너 순회시 깔끔 (그 줄을 다 읽어온다는 의미)
-	for (const auto& row : data) { // 2차원 벡터의 각 행에 대해
-		for (size_t i = 0; i < row.size(); ++i) { // 각 행의 열에 대해
-			userFile << row[i]; // 열 데이터를 파일에 씀
-			if (i < row.size() - 1) {
-				userFile << ","; // 마지막 열이 아니면 쉼표 추가
-			}
-		}
-		userFile << endl; // 행 끝에 줄바꿈 추가
-	}
-	userFile.close(); // 파일 닫기
+    if (file.is_open()) {       // 파일 열림 확인
+        string line;
+        while (getline(file, line)) { // 한 줄씩 읽기
+            if (!line.empty()) { // 빈 줄 건너뛰기
+                lines.push_back(line);    // 벡터에 추가
+            }
+        }
+        file.close();               // 파일 스트림 닫기
+    }
+    else {
+        // 파일 없거나 열 수 없을 시 안내 메시지
+        cerr << "정보: 파일 찾을 수 없거나 열 수 없음: " << filePath << ". 새 파일 생성 가능." << endl;
+    }
+    return lines;                   // 읽은 줄 반환
 }
 
-vector<vector<string>>CSVHandler::readCSV(const string& filename)
-{
-	ifstream file(filename); // CSV 파일 열기
-	vector<vector<string>> data; // 데이터를 저장할 2차원 벡터
+// CSV 파일 쓰기 (덮어쓰기)
+bool CSVHandler::writeCsv(const string& filePath, const vector<string>& data) {
+    ofstream file(filePath);    // 파일 스트림 열기 (덮어쓰기 모드)
 
-	if (!file.is_open()) { // 파일 열기 실패 여부 확인
-		cerr << "파일 열기 실패: " << filename << endl; // 파일 열기 실패 에러 메시지
-		return data; // 빈 데이터 반환
-	}
+    if (file.is_open()) {       // 파일 열림 확인
+        for (const string& line : data) { // 각 줄 파일에 쓰기
+            file << line << endl;
+        }
+        file.close();               // 파일 스트림 닫기
+        return true;                // 쓰기 성공
+    }
+    else {
+        cerr << "오류: 파일 생성 또는 쓰기 실패: " << filePath << endl; // 오류 메시지
+        return false;               // 쓰기 실패
+    }
+}
 
-	string line; //	한 줄씩 읽기 위한 문자열 변수
+// CSV 파일에 데이터 추가
+bool CSVHandler::appendToCsv(const string& filePath, const string& dataLine) {
+    ofstream file(filePath, ios::app); // 파일 스트림 (추가 모드)
 
-	while (getline(file, line)) { // 파일에서 한 줄씩 읽기
-		vector<string> row; // 현재 행을 저장할 벡터
-		size_t pos = 0; // 현재 위치
-		while ((pos = line.find(',')) != string::npos) { // 쉼표를 찾을 때까지 반복
-			row.push_back(line.substr(0, pos)); // 쉼표 이전의 문자열을 행에 추가
-			line.erase(0, pos + 1); // 쉼표 이후의 문자열로 줄임
-		}
-		row.push_back(line); // 마지막 열 추가 (쉼표가 없는 경우)
-		data.push_back(row); // 행을 데이터에 추가
-	}
+    if (file.is_open()) {               // 파일 열림 확인
+        file << dataLine << endl;       // 데이터 추가
+        file.close();                   // 파일 스트림 닫기
+        return true;                    // 추가 성공
+    }
+    else {
+        cerr << "오류: 파일 열기 실패: " << filePath << endl; // 오류 메시지
+        return false;                   // 추가 실패
+    }
+}
 
-	file.close(); // 파일 닫기
-	return data; // 읽은 데이터 반환
+// CSV 한 줄 파싱
+vector<string> CSVHandler::parseCsvLine(const string& line, char delimiter) {
+    vector<string> fields;          // 파싱된 필드 저장
+    stringstream ss(line);          // 문자열 스트림
+    string field;
+
+    while (getline(ss, field, delimiter)) { // 구분자 기준 파싱
+        fields.push_back(field);    // 벡터에 추가
+    }
+    return fields;                  // 파싱된 필드 반환
+}
+
+// 문자열 벡터를 CSV 한 줄로 포맷팅
+string CSVHandler::formatCsvLine(const vector<string>& fields, char delimiter) {
+    stringstream ss;                // 문자열 스트림
+    for (size_t i = 0; i < fields.size(); ++i) { // 각 필드 순회
+        ss << fields[i];
+        if (i < fields.size() - 1) { // 마지막 필드 아니면 구분자 추가
+            ss << delimiter;
+        }
+    }
+    return ss.str();                // 포맷팅된 문자열 반환
 }

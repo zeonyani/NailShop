@@ -1,16 +1,25 @@
+// CSVHandler.h
 #pragma once
 
-#include <string>
-#include <vector>
-using namespace std;
+#include <string>   // std::string
+#include <vector>   // std::vector
+#include <map>      // std::map (현재 사용되지 않음)
 
+// CSV 파일 읽기/쓰기 유틸리티
 class CSVHandler {
 public:
-    // CSV 파일을 저장
-    static void writeCSV(const string& filename, const vector<vector<string>>& data);
-    // static 키워드는 객체를 만들지 않고도 바로 사용할 수 있도록 함 (new 없이)
+    // CSV 파일 읽기 (각 줄 문자열 벡터 반환)
+    static std::vector<std::string> readCsv(const std::string& filePath);
 
-    // CSV 파일을 읽어서 반환
-    static vector<vector<string>> readCSV(const string& filename);
-    // 콜바이 밸류가 아닌 콜바이 레퍼런스를 이용해 성능과 속도 잡음. const를 써서 문자열 절대 안바꾸겠다는 의미
+    // CSV 파일 쓰기 (기존 내용 덮어쓰기)
+    static bool writeCsv(const std::string& filePath, const std::vector<std::string>& data);
+
+    // CSV 파일에 데이터 추가 (기존 내용 유지)
+    static bool appendToCsv(const std::string& filePath, const std::string& dataLine);
+
+    // CSV 한 줄 파싱 (문자열 벡터 반환)
+    static std::vector<std::string> parseCsvLine(const std::string& line, char delimiter = ',');
+
+    // 문자열 벡터를 CSV 한 줄로 변환
+    static std::string formatCsvLine(const std::vector<std::string>& fields, char delimiter = ',');
 };
